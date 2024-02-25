@@ -13,3 +13,12 @@
 {
     "p1": "fr text 1er essai"
 }
+//fnct update lng
+function updateContent(langData)
+{
+    document.querySelectorAll('[data-i8n]').forEach(Element => {
+        const key = Element.getAttribute('data-i18n');
+        Element.textContent = langData[key];
+    });
+    
+}
