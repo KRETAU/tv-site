@@ -4808,7 +4808,7 @@ textarea.form-control-lg {
 
 section
 {
-  scroll-snap-align: center;
+  scroll-snap-align: start;
 }
 .list-group-numbered {
   list-style-type: none;
