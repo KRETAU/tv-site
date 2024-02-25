@@ -22,3 +22,9 @@ function updateContent(langData)
     });
     
 }
+
+//fnct fecth lang
+async function fecthLanguageData(lang){
+    const response = await fetch('languages/${lang}.json');
+    return  response.json();
+}
