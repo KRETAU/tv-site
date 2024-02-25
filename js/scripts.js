@@ -28,3 +28,12 @@ async function fecthLanguageData(lang){
     const response = await fetch('languages/${lang}.json');
     return  response.json();
 }
+
+//fnct change lang
+async  function changeLanguage(lang)
+{
+    await setLanguagePreference(lang);
+    const langData = await fecthLanguageData(lang);
+    updateContent(langData);
+    toggleFrenchStylesheet(lang);
+}
