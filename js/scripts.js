@@ -5,3 +5,11 @@
 */
 // This file is intentionally blank
 // Use this file to add JavaScript to your project
+/* en.json */
+{
+    "p1": "en text try 1"
+}
+/* fr.json*/
+{
+    "p1": "fr text 1er essai"
+}
